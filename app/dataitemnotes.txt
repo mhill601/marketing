@@ -1,0 +1,25 @@
+-- Data Items
+	id
+	name (manually entered or selected from list of known values)
+	parent_id
+	is_repeating (if set to true, than this item and it's children can be repeated i.e. variants would be repeating)
+	is_array
+	is_single
+
+Example:
+	Price
+	Variants
+		Variant (is repeating)
+			Price
+			Size
+			URL ID
+
+-- Known Name Values (for data item id)
+	id
+	name
+	industry
+		automotive
+		realestate
+		ecommerce
+	sub-industry
+	
