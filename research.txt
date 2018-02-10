@@ -1,0 +1,94 @@
+INDEX
+ 1. URL LIST
+ 2. Data Items
+ 3. Category URLs
+ 4. Integrations
+
+------ 1. URL LIST ------
+
+DEALERSHIPS
+1. https://www.drivechicago.com/
+2. http://www.southchicagododgechryslerjeep.com/
+3. http://www.westernavenissan.com/
+4. http://www.fullerton.com/used.cfm#sort
+5. https://www.theautorepublic.com/
+6. http://www.ocautox.com/inventory
+7. https://www.lasvegasdodge.com
+8. https://www.towbindodge.net
+REALTORS
+1. https://www.gsrealtors.com/
+2. http://www.johnlyonsrealestate.com
+3. http://sfeizigroup.com
+4. https://www.cregkc.com
+5. https://www.seeksells.com
+ECOMMERCE
+1. https://www.limelush.com
+2. https://www.daintyhooligan.com/
+3. https://www.napaonline.com
+4. https://www.chewy.com
+5. http://r.www.ironplanet.com
+6. https://www.mvmtwatches.com
+
+------ 2. DATA ITEMS ------
+
+DEALERSHIPS
+make
+model
+year
+description
+image
+transmission (automatic/manual)
+drivetrain (fwd, awd, 4x4)
+price
+sale price
+vin
+
+REALTORS
+neighborhood
+longitude
+latitude
+image
+description
+city
+state
+zip
+title
+MLS #
+
+E-commerce
+availability
+condition
+description
+title
+price
+gtin
+variants (color/size)
+
+------ 3. CATEGORY URLs ------
+Realtors
+1. - Uses javascript to load properties as you scroll down the page. Phantomjs may suffice, however, a potential issue is that the page might freak out if you kept scrolling all the way down,
+     loading 10,000+ entries. This is unlikely since it would be poor design on their part, but needs to be tested.
+
+2. - Simple pagination, single starting url.
+
+3. - Simple pagination, single starting url.
+
+E-Commerce
+1. - Has a variety of different category urls which increment. Standard incrementer functionality will work, but a variety will be needed.
+
+2. - Has a variety of different category urls which increment. Standard incrementer functionality will work, but a variety will be needed.
+
+3. - Has a variety of different category urls which increment. Standard incrementer functionality will work, but a variety will be needed.
+
+4. - Has a variety of different category urls which increment. Standard incrementer functionality will work, but a variety will be needed.
+
+5. - Has an all products category with pagination that increments. Standard incrementer functionality will work.
+
+6. - Uses a variety of different category pages which load all products within that "collection". Some pages require clicking on a button to load results which would require phantomjs or a custom
+shopify integration.
+
+
+
+
+------ 4. Integrations ------
+1. Shopify - https://help.shopify.com/api/reference/product#index

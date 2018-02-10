@@ -34,7 +34,8 @@ class Test
 		 * a top level 'variant' which has a url/id.
 		 */
 
-		/* Price
+		/* Price */
+		/*
 		$selection = new Selection();
 		$selection->filter = ".price-container .money";
 		$selection->type = "eq";
@@ -43,14 +44,14 @@ class Test
 		$selection->is_array = true;
 		*/
 
-		/* Title
+		/* Title */
 		$selection = new Selection();
 		$selection->filter = "h1.product-name";
 		$selection->type = "eq";
 		$selection->eq_index = 0;
 		$selection->method = "text";
 		$selection->is_array = false;
-		*/
+
 
 		/* Images
 		$selection = new Selection();
@@ -77,11 +78,11 @@ class Test
 
 
 		/* Test Symfony Operations */
-		/*
+
 		$operation = new SymfonyOperations($uri);
 		$result = $operation->processSelection($selection);
 		var_dump($result);
-		*/
+
 
 		/* Test Regex Operations */
 		/*
@@ -98,63 +99,3 @@ class Test
 	}
 
 }
-
-	/**
-	 * List of urls that can be used for testing.
-	 * DEALERSHIPS
-	 * https://www.drivechicago.com/
-	 * http://www.southchicagododgechryslerjeep.com/
-	 * http://www.westernavenissan.com/
-	 * http://www.fullerton.com/used.cfm#sort
-	 * https://www.theautorepublic.com/
-	 * http://www.ocautox.com/inventory
-	 * https://www.lasvegasdodge.com
-	 * https://www.towbindodge.net
-	 * REALTORS
-	 * https://www.gsrealtors.com/
-	 * http://www.johnlyonsrealestate.com
-	 * http://sfeizigroup.com
-	 * https://www.cregkc.com
-	 * https://www.seeksells.com
-	 * ECOMMERCE
-	 * https://www.limelush.com
-	 * https://www.daintyhooligan.com/
-	 * https://www.napaonline.com
-	 * https://www.chewy.com
-	 * http://r.www.ironplanet.com
-	 * https://www.mvmtwatches.com
-	 */
-
-	/**
-	* List of data items that should be pulled.
-	** DEALERSHIPS
-	* make
-	* model
-	* year
-	* description
-	* image
-	* transmission (automatic/manual)
-	* drivetrain (fwd, awd, 4x4)
-	* price
-	* sale price
-	* vin
-	** REALTORS
-	* neighborhood
-	* longitude
-	* latitude
-	* image
-	* description
-	* city
-	* state
-	* zip
-	* title
-	* MLS #
-	** E-commerce
-	* availability
-	* condition
-	* description
-	* title
-	* price
-	* gtin
-	* variants (color/size)
-	*/
