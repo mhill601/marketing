@@ -5,6 +5,7 @@ namespace App\Inc\Scraper\Testing;
 //use App\Inc\Scraper\Analyze\SourceManagement;
 use App\Inc\Scraper\Analyze\SymfonyOperations;
 use App\Inc\Scraper\Analyze\RegexOperations;
+use App\Inc\Scraper\Manage\URLs\GetInitialURLs;
 
 class Selection
 {
@@ -23,6 +24,12 @@ class Regex
 
 class Test
 {
+	public function test2()
+	{
+		$initialurls = new GetInitialURLs();
+		$initialurls->run();
+	}
+
 	public function test1()
 	{
 		$uri = "https://www.mvmtwatches.com/products/chrono-gun-metal-sandstone-leather";

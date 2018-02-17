@@ -12,5 +12,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(ScrapersTableSeeder::class);
+		$this->call(IncrementFragmentsTableSeeder::class);
+		$this->call(StaticFragmentsTableSeeder::class);
+		$this->call(UsersTableSeeder::class);
     }
 }

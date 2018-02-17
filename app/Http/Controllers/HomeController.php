@@ -27,9 +27,15 @@ class HomeController extends Controller
         return view('home');
     }
 
-    public function test1()
-    {
-    	$test = new Test();
-    	$test->test1();
-    }
+	public function test1()
+	{
+		$test = new Test();
+		$test->test1();
+	}
+
+	public function test2()
+	{
+		$test = new Test();
+		$test->test2();
+	}
 }

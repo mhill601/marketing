@@ -15,19 +15,21 @@ DEALERSHIPS
 6. http://www.ocautox.com/inventory
 7. https://www.lasvegasdodge.com
 8. https://www.towbindodge.net
+
 REALTORS
-1. https://www.gsrealtors.com/
-2. http://www.johnlyonsrealestate.com
-3. http://sfeizigroup.com
-4. https://www.cregkc.com
-5. https://www.seeksells.com
+9. https://www.gsrealtors.com/
+10. http://www.johnlyonsrealestate.com
+11. http://sfeizigroup.com
+12. https://www.cregkc.com
+13. https://www.seeksells.com
+
 ECOMMERCE
-1. https://www.limelush.com
-2. https://www.daintyhooligan.com/
-3. https://www.napaonline.com
-4. https://www.chewy.com
-5. http://r.www.ironplanet.com
-6. https://www.mvmtwatches.com
+14. https://www.limelush.com
+15. https://www.daintyhooligan.com/
+16. https://www.napaonline.com
+17. https://www.chewy.com
+18. http://r.www.ironplanet.com
+19. https://www.mvmtwatches.com
 
 ------ 2. DATA ITEMS ------
 

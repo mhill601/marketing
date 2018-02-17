@@ -27,6 +27,9 @@ Route::get('/inventory-setup', 'ScraperController@create');
 
 /* Test Routes */
 Route::get('/test1', 'HomeController@test1');
+Route::get('/test2', 'HomeController@test2');
+Route::get('/home', 'HomeController@index')->name('home');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

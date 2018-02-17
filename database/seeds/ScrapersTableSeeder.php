@@ -11,8 +11,66 @@ class ScrapersTableSeeder extends Seeder
      */
     public function run()
     {
+		/*
 		DB::table('scrapers')->insert([
             'status' => 0
         ]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		DB::table('scrapers')->insert([
+			'status' => 0
+		]);
+		*/
     }
 }
