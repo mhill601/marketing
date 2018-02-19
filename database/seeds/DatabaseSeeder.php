@@ -15,5 +15,8 @@ class DatabaseSeeder extends Seeder
 		$this->call(IncrementFragmentsTableSeeder::class);
 		$this->call(StaticFragmentsTableSeeder::class);
 		$this->call(UsersTableSeeder::class);
+		$this->call(SelectionTableSeeder::class);
+		$this->call(RegexTableSeeder::class);
+		$this->call(GeneratorsTableSeeder::class);
     }
 }

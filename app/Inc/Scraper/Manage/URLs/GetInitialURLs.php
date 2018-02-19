@@ -3,6 +3,7 @@
 namespace App\Inc\Scraper\Manage\URLs;
 use App\StaticFragment;
 use App\IncrementFragment;
+use App\Inc\Scraper\Analyze\SourceManagement;
 /**
  * Generates all of the initial category urls which will
  * be used to retrieve inventory urls later on.
@@ -24,8 +25,9 @@ class GetInitialURLs
 
 public function run()
 {
-	$generator_id = 1;
-	$generator_max_iterations = 20;
+	$generator_id = 2;
+	$generater_type = "selection";
+	$generator_max_iterations = 5;
 
 	/* Get all fragments associated with the generator. */
 	$static_fragments = StaticFragment::where('generator_id', $generator_id)->get();
@@ -33,6 +35,7 @@ public function run()
 
 	/* Order the fragments according to their position property. */
 	$fragments = $this->orderFragments($static_fragments, $increment_fragments);
+	$urls = [];
 
 	/* Generate however many urls is specified in the generators max iterations. */
 	for($x = 0; $x <= $generator_max_iterations; $x++)
@@ -53,10 +56,43 @@ public function run()
 		}
 
 		$url = $this->constructURL($fragments);
-		echo $url . '</br>';
-	}
 
+		/* Confirm url status is valid. */
+		$source_management = new SourceManagement($url);
+		if($source_management->isSuccessful()){
+
+
+			array_push($urls, $url);
+		}
+		//.search-pagination li.next
+
+
+		/* Check for end criteria. */
+			/* Stop iterations (either this loop or next depending on xxx) */
+
+		/* Save urls to database. */
+	}
+	echo '<pre>';
+		var_dump($urls);
+	echo '</pre>';
 	//dd($fragments);
+}
+
+public function checkEndCritera($generator)
+{
+	//Type
+	//selection
+	//regex
+
+
+	//ID
+
+	//get_next
+	//
+	switch()
+	{
+
+	}
 }
 
 public function constructURL($fragments)

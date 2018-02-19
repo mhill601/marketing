@@ -21,5 +21,12 @@ class StaticFragmentsTableSeeder extends Seeder
 			'value' => '&sortby=distancesortexp',
 			'generator_id' => 1
 		]);
+
+		DB::table('staticfragments')->insert([
+			'position' => 1,
+			'value' => 'http://www.westernavenissan.com/search/chicago-il/?cy=60636&ct=50&p=',
+			'generator_id' => 2
+		]);
+
     }
 }
